@@ -1,6 +1,13 @@
 # Vanguard-Net
 
+![Python](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)
+![PyQt6](https://img.shields.io/badge/GUI-PyQt6-1a73e8?logo=qt&logoColor=white)
+![asyncio](https://img.shields.io/badge/core-asyncio-2ea44f)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![PRs](https://img.shields.io/badge/PRs-welcome-orange)
+
 Асинхронная система сетевого аудита и сканирования портов с графическим интерфейсом на PyQt6.
+
 
 Ядро построено на `asyncio` и низкоуровневых сокетах (`asyncio.open_connection`), что позволяет параллельно проверять тысячи портов в секунду. После обнаружения открытого порта система пытается захватить баннер сервиса (HTTP, SSH, FTP, SMTP и др.) и сравнивает его с встроенной базой сигнатур известных уязвимостей, выставляя оценку критичности: **Low / Medium / High**.
 
